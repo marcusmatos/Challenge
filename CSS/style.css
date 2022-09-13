@@ -1,9 +1,10 @@
 /*Configs and setups*/
 :root {
   --gray050: #F9FAFB;  /* Gray/050 */
+  --gray200: #EAECF0;  /* Gray/200 */
   --gray500: #667085;  /* Gray/500 */
-  --darkRed: #8E2424;  /* Dark red */
   --gray900: #101828;  /* Gray/900 */
+  --darkRed: #8E2424;  /* Dark red */
   --white100: #FFFFFF; /* White100 */
 }
 
@@ -129,20 +130,9 @@ body {
   flex-direction: column;
   align-items: center;
   padding: 96px 0px;
-  gap: 64px;
-  width: 1440px;
-  height: 1798px;
   background: var(--white100);
-  flex: none;
-  order: 3;
   align-self: stretch;
-  flex-grow: 0;
-}
-
-.talent {
-  width: 1280px;
-  height: 602px;
-}
+  }
 
 .talent h3 {
   font-weight: 500;
@@ -179,11 +169,48 @@ body {
 }
 
 .talent img {
-  width: 1216px;
-  height: 400px;
   left: 112px;
   top: 298px;
-  margin: 64px auto;
+  margin: 64px auto 0;
+}
+
+.vacancy h2 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  color: var(--gray900);
+  margin-top: 64px;
+  margin-bottom: 32px;
+}
+
+.job-offer {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid var(--gray200);
+  border-radius: 16px;
+  gap: 24px;
+  margin-top: 0.6rem;
+}
+
+.job-offer h3:first-child {
+  width: 720px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+  color: var(--gray900);
+  margin: 24px;
+}
+
+.job-item span {
+  font-weight: 500;
+  font-size: 16px;
+  margin-right: 24px;
+  margin-top: 24px;
+  color: var(--gray500);
+  display: inline-block;
 }
 
 /*Fifth section - Testimonial*/
@@ -191,9 +218,50 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 64px;
+  margin: 0 64px 48px;
   background: rgba(196, 25, 25, 0.03);
   border-radius: 16px;
+}
+
+.testimony h3 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  color: var(--darkRed);
+  margin: 8px 0;
+}
+
+.testimony h2 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 44px;
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: var(--gray900);
+  margin: 8px 64px 32px;
+}
+
+.testimony p{
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: var(--gray900);
+  margin: 16px 0 4px;
+}
+
+.testimony span{
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  color: var(--gray500);
+  margin-bottom: 64px;
 }
 
 /*Sixth section - Form*/
@@ -202,8 +270,6 @@ body {
   flex-direction: column;
   align-items: center;
   padding: 96px 0px;
-  gap: 32px;  
-  width: 1440px;
-  height: 430px;
+  gap: 32px;
   background: var(--gray050);
 }
